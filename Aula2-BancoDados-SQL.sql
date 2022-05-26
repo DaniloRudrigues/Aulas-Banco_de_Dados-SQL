@@ -1,5 +1,5 @@
 # Chave Estrangeira == Atributo único que interliga entidades, ou seja a dependencia é realizada pelo - foreign key(atributo que recebera a "references")references Entidade(atributo primario) -
-
+# Chave Estrangeira == pode ser nula
 
 use aulaNext;
 # cardinalidade 1:1 -  UNIQUE
@@ -36,7 +36,8 @@ create table TelefoneFuncionario(  #multvalorado - vários telefones - sem uniqu
     primary key(id)
 );
 
-# cardinalidade n:n - SEM UNIQUE e COM 2 CHAVES ESTRANGEIRAS
+# cardinalidade n:n - SEM UNIQUE e COM 2 CHAVES ESTRANGEIRAS - relações n:n sempre se transformam em entidades
+
 
 create table Autor(
 	id int not null auto_increment,
